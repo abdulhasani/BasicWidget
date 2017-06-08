@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bebrayan.com.widgetprototype.MainActivity">
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    >
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contoh Penerapan Widget Button Android"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f39c12"
+                android:onClick="simpleButton"
+                android:padding="10dp"
+                android:text="Contoh Button Sederhana"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#f39c12"
+                android:drawableLeft="@android:drawable/sym_call_outgoing"
+                android:onClick="leftIconButton"
+                android:padding="10dp"
+                android:text="Button dengan Icon diKiri"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#f39c12"
+                android:drawableRight="@android:drawable/sym_call_outgoing"
+                android:onClick="rigthIconButton"
+                android:padding="10dp"
+                android:text="Button dengan gambar latar"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ex2"
+                android:onClick="backgroundImageButton"
+                android:padding="10dp"
+                android:text="Button dengan gambar latar"
+                />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ex3"
+                android:onClick="borderButton"
+                android:padding="10dp"
+                android:text="Button dengan Border Color"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
