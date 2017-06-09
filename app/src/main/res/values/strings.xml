@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">WidgetPrototype</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="android_layout_arrays">
+        <item>Pilih Bahasa</item>
+        <item>Indonesia</item>
+        <item>English</item>
+        <item>Jepang</item>
+        <item>Germany</item>
+        <item>Belanda</item>
+        <item>Spanyol</item>
+    </string-array>
 </resources>
